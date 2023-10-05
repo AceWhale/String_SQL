@@ -1,16 +1,16 @@
 -- 1 
-DECLARE @Palindrom NVARCHAR(MAX) = 'дед боб дед' -- нет больше деда Боба
+DECLARE @Palindrom NVARCHAR(MAX) = 'РґРµРґ Р±РѕР± РґРµРґ' -- РЅРµС‚ С‚РµРїРµСЂСЊ РґРµРґР° Р‘РѕР±Р°
 
 IF @Palindrom = REVERSE(@Palindrom)
-    PRINT 'Строка палиндромом.'
+    PRINT 'Р­С‚Рѕ РїР°Р»РёРЅРґСЂРѕРј'
 ELSE
-    PRINT 'Строка не палиндромом'
+    PRINT 'Р­С‚Рѕ РЅРµ РїР°Р»РёРЅРґСЂРѕРј'
 
 
 
 -- 2
-DECLARE @String NVARCHAR(MAX) = 'Нажал кабан на кабана и снова кабан.'
-DECLARE @Search NVARCHAR(MAX) = 'кабан'
+DECLARE @String NVARCHAR(MAX) = 'РќР°Р¶Р°Р» РєР°Р±Р°РЅ РЅР° РєР°Р±Р°РЅР° Рё СЃРЅРѕРІР° РєР°Р±Р°РЅ'
+DECLARE @Search NVARCHAR(MAX) = 'РєР°Р±Р°РЅ'
 
 DECLARE @Index INT = 1
 DECLARE @Count INT = 0
@@ -25,7 +25,7 @@ BEGIN
     END
 END
 
-PRINT @Search + '" встречается = ' + CAST(@Count AS NVARCHAR(10)) + ' раз(a) в строке'
+PRINT @Search + '" РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ = ' + CAST(@Count AS NVARCHAR(10)) + ' СЂР°Р·(a) РІ СЃС‚СЂРѕРєРµ'
 
 
 
@@ -61,6 +61,6 @@ BEGIN
 END
 
 IF @Spam = 1
-    PRINT 'Это спам!'
+    PRINT 'Р­С‚Рѕ СЃРїР°Рј!'
 ELSE
-    PRINT 'Это не спам'
+    PRINT 'Р­С‚Рѕ РЅРµ СЃРїР°Рј'
